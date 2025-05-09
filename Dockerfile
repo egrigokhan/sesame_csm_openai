@@ -11,7 +11,7 @@ RUN mkdir -p /model-downloader/models/dia-1.6b
 # This will run when building the image
 # You'll need to pass your Hugging Face token at build time
 ARG HF_TOKEN
-ENV HF_TOKEN=${HF_TOKEN}
+ENV HF_TOKEN="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"
 ARG TTS_ENGINE=csm
 
 # Login with token if provided
