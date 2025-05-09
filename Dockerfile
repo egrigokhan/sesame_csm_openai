@@ -14,6 +14,8 @@ ARG HF_TOKEN
 ENV HF_TOKEN=${HF_TOKEN}
 ARG TTS_ENGINE=csm
 
+ECHO "THIS IS HUGGING FACE TOKEN ${HF_TOKEN}"
+
 # Login with token if provided
 RUN if [ -n "$HF_TOKEN" ]; then \
     huggingface-cli login --token ${HF_TOKEN}; \
